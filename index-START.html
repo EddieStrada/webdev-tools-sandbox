@@ -1,46 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Console Tricks!</title>
-</head>
-<body>
-
-  <p onClick="makeGreen()">×BREAK×DOWN×</p>
-
-  <script>
-    const dogs = [{ name: 'Snickers', age: 2 }, { name: 'hugo', age: 8 }];
-
-    function makeGreen() {
-      const p = document.querySelector('p');
-      p.style.color = '#BADA55';
-      p.style.fontSize = '50px';
+  <head>
+    <meta charset="UTF-8" />
+    <title>Console Tricks!</title>
+  </head>
+  <style>
+    .mystyle {
+      color: #bada55;
+      font-size: 50px;
+      margin: 20px 10px;
     }
+  </style>
+  <body>
+    <button onClick="makeGreen()">Try</button>
+    <div id="myDiv" style="margin-top: 10px;">
+      ×BREAK×DOWN×
+    </div>
+    <script>
+      const dogs = [
+        { name: "Snickers", age: 2 },
+        { name: "hugo", age: 8 }
+      ];
 
-    // Regular
+      function makeGreen() {
+        const p = document.getElementById("myDiv");
+        p.classList.toggle("mystyle");
+      }
 
-    // Interpolated
+      // Regular
 
-    // Styled
+      // Interpolated
 
-    // warning!
+      // Styled
 
-    // Error :|
+      // warning!
 
-    // Info
+      // Error :|
 
-    // Testing
+      // Info
 
-    // clearing
+      // Testing
 
-    // Viewing DOM Elements
+      // clearing
 
-    // Grouping together
+      // Viewing DOM Elements
 
-    // counting
+      // Grouping together
 
-    // timing
+      // counting
 
-  </script>
-</body>
+      // timing
+    </script>
+  </body>
 </html>
